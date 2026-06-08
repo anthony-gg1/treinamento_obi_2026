@@ -1,0 +1,6 @@
+m1 = int(input())
+m2 = int(input())
+c = int(input())
+cf = int(input())
+if(c - cf >= m1 and c - cf <= m2): print("S")
+else: print("N")
