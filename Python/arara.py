@@ -1,16 +1,12 @@
 n, m = list(map(int, input().split()))
-contS = 1
-contN = 0
 
-for _ in range(n):
-    if(n <= m):
-        contS += 1
-        n += 4
-    else:
-        contN += 1
-        n += 4
-
-if(contN == 1):
-    print("N")
+if n > m:
+    print("N" if n == 1 else "S")
 else:
-    print("S")
+    pi = int(((m - n) / 4) + 1)
+    pe = n - pi
+
+    if pe == 1:
+        print("N")
+    else:
+        print("S") 
